@@ -22,7 +22,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "storybook dev"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -38,6 +39,9 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@next/eslint-plugin-next": "^14.2.5",
+    "@storybook/addon-essentials": "^8.2.7",
+    "@storybook/nextjs": "^8.2.7",
+    "@storybook/react": "^8.2.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
