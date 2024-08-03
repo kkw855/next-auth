@@ -39,6 +39,7 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@next/eslint-plugin-next": "^14.2.5",
+    "@storybook/addon-a11y": "^8.2.7",
     "@storybook/addon-essentials": "^8.2.7",
     "@storybook/nextjs": "^8.2.7",
     "@storybook/react": "^8.2.7",
