@@ -28,6 +28,28 @@ export default tseslint.config(
       ...reactRecommended.languageOptions,
     },
     rules: {
+      'react/no-multi-comp': 'error',
+      'react/jsx-no-bind': [
+        'error',
+        {
+          ignoreDOMComponents: false,
+          ignoreRefs: false,
+          allowArrowFunctions: false,
+          allowFunctions: false,
+          allowBind: false,
+        },
+      ],
+      'react/jsx-props-no-spreading': [
+        'error',
+        {
+          html: 'enforce',
+          custom: 'enforce',
+          explicitSpread: 'enforce',
+          exceptions: ['Comp'],
+        },
+      ],
+      'react/no-array-index-key': 'error',
+      'react/prefer-read-only-props': 'error',
       'react/prefer-stateless-function': 'error',
       'react/button-has-type': 'error',
       'react/no-unused-prop-types': 'error',
@@ -38,11 +60,6 @@ export default tseslint.config(
       'react/no-danger-with-children': 'error',
       'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
       'react/jsx-fragments': 'error',
-      'react/destructuring-assignment': [
-        'error',
-        'always',
-        { destructureInSignature: 'always' },
-      ],
       'react/jsx-no-leaked-render': ['error', { validStrategies: ['ternary'] }],
       'react/jsx-max-depth': ['error', { max: 5 }],
       'react/function-component-definition': [
