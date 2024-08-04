@@ -45,7 +45,7 @@ export default tseslint.config(
           html: 'enforce',
           custom: 'enforce',
           explicitSpread: 'enforce',
-          exceptions: ['Comp'],
+          exceptions: [],
         },
       ],
       'react/no-array-index-key': 'error',
