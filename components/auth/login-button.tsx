@@ -24,7 +24,7 @@ export const LoginButton = (props: Prop) => {
   }
 
   return (
-    <span className="cursor-pointer" onClick={onClick}>
+    <span className="cursor-pointer" onClick={onClick} role="button">
       {children}
     </span>
   )
