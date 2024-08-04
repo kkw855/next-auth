@@ -29,23 +29,13 @@ export default tseslint.config(
     },
     rules: {
       'react/no-multi-comp': 'error',
-      'react/jsx-no-bind': [
-        'error',
-        {
-          ignoreDOMComponents: false,
-          ignoreRefs: false,
-          allowArrowFunctions: false,
-          allowFunctions: false,
-          allowBind: false,
-        },
-      ],
       'react/jsx-props-no-spreading': [
         'error',
         {
           html: 'enforce',
           custom: 'enforce',
           explicitSpread: 'enforce',
-          exceptions: ['Form'],
+          exceptions: ['Form', 'Input'],
         },
       ],
       'react/no-array-index-key': 'error',
