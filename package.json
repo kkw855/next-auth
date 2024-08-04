@@ -23,6 +23,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun ./db/migrate.ts",
     "test": "vitest",
     "storybook": "storybook dev"
   },
