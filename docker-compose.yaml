@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: next_auth
+    ports:
+      - "6789:5432"
+    volumes:
+      - postgres:/var/lib/postgresql
+volumes:
+  postgres:
