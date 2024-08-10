@@ -26,7 +26,9 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "bun ./db/migrate.ts",
     "test": "vitest",
-    "storybook": "storybook dev"
+    "test:storybook": "test-storybook --url http://localhost:6006",
+    "storybook": "sb dev -p 6006",
+    "storybook:build": "sb build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -52,12 +54,14 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@next/eslint-plugin-next": "^14.2.5",
+    "@playwright/test": "^1.46.0",
     "@storybook/addon-a11y": "^8.2.7",
     "@storybook/addon-essentials": "^8.2.7",
     "@storybook/addon-interactions": "^8.2.8",
     "@storybook/nextjs": "^8.2.7",
     "@storybook/react": "^8.2.7",
     "@storybook/test": "^8.2.8",
+    "@storybook/test-runner": "^0.19.1",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^20",
@@ -74,6 +78,7 @@
     "jsdom": "^24.1.1",
     "lint-staged": "^15.2.7",
     "next-router-mock": "^0.9.13",
+    "playwright": "^1.46.0",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
